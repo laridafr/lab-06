@@ -1,21 +1,39 @@
 package com.example.listycity;
 
 /**
- * THis class represnts a City
+ * This class represents a City
  */
 public class City implements Comparable<City> {
     private String city;
     private String province;
 
+    /**
+     * Constructs a new City object.
+     *
+     * @param city
+     *          the city name (e.g., "Edmonton")
+     * @param province
+     *          the province or state name (e.g., "Alberta")
+     */
     City(String city, String province) {
         this.city = city;
         this.province = province;
     }
 
+    /**
+     * Returns city name
+     * @return
+     *      city name
+     */
     public String getCity() {
         return city;
     }
 
+    /**
+     * Returns province name
+     * @return
+     *      province name
+     */
     public String getProvince() {
         return province;
     }
